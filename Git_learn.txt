@@ -43,5 +43,19 @@ git branch  //查看已有分支
 git add <file>
 git commit -m <message>
 git checkout master
-git merge <branch>
-git branch -d <branch>
+git merge <branch>  //  合并分支
+git branch -d <branch>  //删除分支
+//git无法自动合并分支时，要首先解决冲突，手动编辑为我们希望的内容，再提交
+git log --graph //查看分支合并图
+git merge --no--ff -m "merge with no-ff" <branch>   //保留分支信息
+git stash   //存储工作现场
+git stash pop   //恢复并删除stash内容，返回工作现场
+git stash list  //  查看stash内容
+git push origin <branch>    //向远程库推送其他分支，推送失败采用git pull远程抓取分支
+git remote -v   //查看远程库信息
+git checkout --b branch-name origin/branch name //从本地创建与远程对应的分支
+git branch --set-upstream branch-name origin/branch name    //建立本地分支与远程分支的关联
+git rebase  //把本地未push的分叉体加历史整理成直线
+git tag <tagname>   //新建标签
+git tag -a <tagname> -m "meassage"  //指定标签信息
+git tag //查看所有标签
