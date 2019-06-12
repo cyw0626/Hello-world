@@ -35,3 +35,8 @@ ssh-keygen -t rsa -C "youremail@example.com"
 git remote add origin <url> //与远程库关联
 git push -u origin master
 git push origin master //进入远程库
+git clone <url> //本地从远程库克隆一份
+
+//多人协作
+git checkout -b <branch>
+git branch  //查看已有分支
