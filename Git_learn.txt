@@ -56,6 +56,11 @@ git remote -v   //查看远程库信息
 git checkout --b branch-name origin/branch name //从本地创建与远程对应的分支
 git branch --set-upstream branch-name origin/branch name    //建立本地分支与远程分支的关联
 git rebase  //把本地未push的分叉体加历史整理成直线
+
 git tag <tagname>   //新建标签
 git tag -a <tagname> -m "meassage"  //指定标签信息
 git tag //查看所有标签
+git tag -d <tagname>    //删除指定标签
+git push origin <tagname>   //指定标签推送到远程
+git push origin --tags  //所有标签推送到远程
+//删除远程标签：本地删除 git tag -d <tagname>;远程删除 git push origin :refs/tags/<tagname>
