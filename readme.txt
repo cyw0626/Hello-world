@@ -24,3 +24,12 @@ basis
 //git add 把文件添加到暂存区stage，git commit 将其添加到分支
 git checkout --<file>   //丢弃最近一次工作区修改
 git reset HEAD <file>   //丢弃最近一次暂存区修改
+
+//删除文件
+rm <file>
+git rm <file>
+
+//ssh加密连接
+ssh-keygen -t rsa -C "youremail@example.com"
+//.ssh目录找到id_rsa.pub复制进Account settings-SSH Keys
+//两台电脑只要把ssh key放入github上就能同时提交了
