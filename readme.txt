@@ -13,3 +13,6 @@ git status
 git log //查看更新历史
 
 test
+git reset --hard HEAD^  //退回上一版本
+git reset --hard <version> //返回指定版本
+git reflog  //记录每次命令
